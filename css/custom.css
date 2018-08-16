@@ -1,3 +1,15 @@
+body{
+    background-color: #DAEFF4;
+}
+
+#accordion{
+	background-color: #DAEFF4;	
+}
+
+.interior-acordeon{
+	background-color: #F7EEDC;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: black;
 	}
@@ -25,6 +37,16 @@ h1, h2, h3, h4, h5, h6 {
 .small-print {
 	text-align: center;
 	}
+
+.negritas{
+	font-weight: bold;
+}
+
+.texto-blanco{
+	color: white;
+}
+
+
 
 
 	
