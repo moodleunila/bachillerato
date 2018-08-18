@@ -1,9 +1,9 @@
 body{
-    background-color: #DAEFF4;
+    background-color: #F7F5F5;	/*#0B4570*/
 }
 
-#accordion{
-	background-color: #DAEFF4;	
+.texto-dorado{
+	color: #CAB276;
 }
 
 .interior-acordeon{
@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #side-carousel img {
 	margin: 0 auto;
-	}
+}
 
 .footer-blurb {
     padding: 30px 0;
@@ -47,6 +47,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.encabezado{
+	background-image: linear-gradient(#CAB276, #FFF);
+}
+
+.item{
+	background-image: linear-gradient(#000, #FFF);	
+}
+
+.justificado{
+	text-align : justify;
+}
 
 
-	
+.fondo-dorado-leve{
+	background-color:  #EEE7D4;
+}
+
+.texto-negritas{
+	font-weight: bold;
+}
+
+.texto-dorado-fuerte{
+  color: #8E7C54;
+}
+
+.oblique {
+    font-style: oblique;
+}
+.caja-centrado{
+	margin-right:auto
+}
