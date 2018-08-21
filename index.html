@@ -43,7 +43,7 @@
                 </li>
                 <li class="nav-item">
                 	<br>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#preguntas">Preguntas frecuentes</a>
                 </li>
                 <li class="nav-item">
                 	<br>
@@ -78,18 +78,25 @@
 		<!-- Left Column -->
 		<div class="col-sm-3">
 
-
-			<!-- Text Panel -->
 			<div class="card">
 				<div class="card-header p-b-0 encabezado">
-						<h5 class="card-title"><i class="fa fa-random" aria-hidden="true"></i> Presentación </h5>						
+					<h5 class="card-title">
+						<i class="fa fa-sign-in" aria-hidden="true"></i> 
+						Acceso
+					</h5>
 				</div>
-				<center>
 				<div class="card-block">
-					<iframe width="100%" height="250" src="https://www.youtube.com/embed/ZGyMNhS50Ho" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-				</div>	
-				</center>	
-			</div>
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control" id="uid" name="uid" placeholder="usuario">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="contraseña">
+						</div>
+						<button type="submit" class="btn btn-success">Acceder</button>
+					</form>
+				</div>
+			</div>				
 
 			<!-- Text Panel -->
 			<div class="card">
@@ -101,19 +108,25 @@
 					<p class="card-text justificado">El Bachillerato a Distancia UNILA es la opción que ofrece la Universidad Nacional Autónoma de México  a través de Escuelas incorporadas a la UNAM para impartir el Bachillerato a Distancia que otorgan el certificado a través de la Dirección General de Incorporación y Revalidación de Estudios (DGIRE). </p>
 					<p><button class="btn btn-secondary" data-toggle="modal" data-target="#programa">Leer más...</button></p>
 				</div>
-			</div>
+			</div>									
 
 			<!-- Text Panel -->
 			<div class="card">
 				<div class="card-header p-b-0 encabezado">
-					<h5 class="card-title"><i class="fa fa-pencil" aria-hidden="true"></i> Modelo educativo</h5>
+					<h5 class="card-title">
+						<i class="fa fa-bullhorn" aria-hidden="true"></i>
+						Recursos tecnológicos
+					</h5>
 				</div>
-
 				<div class="card-block">
-					<p class="card-text justificado">Este programa se caracteriza por su innovador modelo educativo, un plan de estudios diseñado para la modalidad en línea con asignaturas multidisciplinarias y una forma de trabajo adaptable a distintas necesidades y horarios. El modelo ofrece el apoyo de asesores y tutores a distancia, altamente calificados, quienes acompañan al alumno durante su proceso de aprendizaje.</p>
-					<p><button class="btn btn-secondary" data-toggle="modal" data-target="#modelo">Leer más...</button></p>		
+					<p class="card-text">Hardware</p>
+					<div class="btn-group btn-group-sm" role="group">
+						<button type="button" class="btn btn-secondary">Computadora con acceso a Internet</button>
+						<button type="button" class="btn btn-secondary">Accesorios multimedia: bocinas, micrófono (o diadema con micrófono) y webcam</button>
+						<button type="button" class="btn btn-secondary">Niche</button>
+					</div>
 				</div>
-			</div>
+			</div>	
 
 			<!-- List-Group Panel -->
 			<div class="card">
@@ -250,25 +263,7 @@
 					  	</div>
 					</div>					
 				</div>
-			</div>			
-
-			<!-- Text Panel -->
-			<div class="card">
-				<div class="card-header p-b-0">
-					<h5 class="card-title">
-						<i class="fa fa-bullhorn" aria-hidden="true"></i>
-						Active Predomination
-					</h5>
-				</div>
-				<div class="card-block">
-					<p class="card-text">Proactively envisioned multimedia based expertise and cross-media growth strategies.</p>
-					<div class="btn-group btn-group-sm" role="group">
-						<button type="button" class="btn btn-secondary">Resource</button>
-						<button type="button" class="btn btn-secondary">Envision</button>
-						<button type="button" class="btn btn-secondary">Niche</button>
-					</div>
-				</div>
-			</div>	
+			</div>
 				
 		</div><!--/Left Column-->
   
@@ -361,7 +356,7 @@
 						  				<center>
 						  					<br>
 						    			<h5 class="card-title texto-dorado">Estrategias de Aprendizaje a Distancia</h5>					    		
-							    			<button type="button" class="btn btn-lg btn-info" data-toggle="popover" title="Descripción" data-content="Aborda aspectos didácticos, metodológicos y organizacionales sobre el proceso de aprendizaje">ver</button>
+							    			<button type="button" data-placement="bottom" class="btn btn-lg btn-info" data-toggle="popover" title="Descripción" data-content="Aborda aspectos didácticos, metodológicos y organizacionales sobre el proceso de aprendizaje">ver</button>
 							    		</center>
 						  			</div>
 								</div>
@@ -376,7 +371,7 @@
 						  					<br>
 							    			<h5 class="card-title texto-dorado">Lectura y Redacción</h5>		
 							    			<br>						    			
-						    				<button type="button" class="btn btn-lg btn-info caja-centrado" data-toggle="popover" title="Descripción" data-content="Te permitirá incrementar tu vocabulario, comprender con exactitud lo que lees y escribir con claridad diversos tipos de textos">ver</button>
+						    				<button type="button" class="btn btn-lg btn-info caja-centrado" data-toggle="popover" title="Descripción" data-placement="bottom" data-content="Te permitirá incrementar tu vocabulario, comprender con exactitud lo que lees y escribir con claridad diversos tipos de textos">ver</button>
 						    			</center>
 						  			</div>
 								</div>
@@ -392,7 +387,7 @@
 							    			<h5 class="card-title texto-dorado">Matemáticas</h5>						    
 							    			<br>
 						    			
-							    			<button type="button" class="btn btn-lg btn-info" data-toggle="popover" title="Descripción" data-content="Te permitirá recordar los elementos de Aritmética, Álgebra y Geometría plana necesarios para iniciar el 
+							    			<button type="button" class="btn btn-lg btn-info" data-placement="bottom" data-toggle="popover" title="Descripción" data-content="Te permitirá recordar los elementos de Aritmética, Álgebra y Geometría plana necesarios para iniciar el 
 							    			bachillerato">ver</button>
 							    		</center>
 						  			</div>
@@ -408,6 +403,25 @@
             		</p>
             	</div>                
 			</div>
+
+
+			<!-- Text Panel -->
+			<div class="card">
+				<div class="card-header p-b-0 encabezado">
+					<h5 class="card-title"><i class="fa fa-book" aria-hidden="true"></i> Plan de estudios</h5>
+				</div>
+				<div class="card-block">
+					<p class="card-text justificado">
+					En el marco del paradigma educativo centrado en el aprendizaje, en particular de los modelos constructivistas, los programas de estudio y los materiales en línea del Bachillerato a Distancia UNILA están diseñados para la adquisición de conocimientos y desarrollo paralelo de habilidades, a partir de la participación activa del estudiante. Así, toda la organización curricular y el trabajo pedagógico a lo largo del proceso de creación del bachillerato tienen como propósito que el estudiante aprenda y que lo haga de manera significativa. Ello se logra a partir de una administración de contenidos graduada, que aprovecha al máximo el medio electrónico y que permite a cada estudiante individual enfrentar materiales ajustados a su nivel cambiante de competencia en la asignatura.
+					<br><br>
+					El diseño curricular permite incluir ejes integradores que fomenten, de manera transversal, el desarrollo de habilidades. Así, cada asignatura no sólo aborda contenidos declarativos, sino habilidades múltiples que se van desarrollando en cada módulo sucesivo. Con ello, el estudiante puede adquirir conocimientos, a la vez que desarrolla actitudes y valores, habilidades de estudio, capacidad de reflexión y autonomía en el aprendizaje, así como habilidad para participar de diversas formas, en actividades grupales.  
+					<br><br>
+					El plan de estudios B@UNAM consta de 240 créditos organizados en cuatro módulos, cada uno con seis asignaturas de 80 horas de trabajo académico cada una. Adicionalmente, los cursos propedéuticos requieren 100 horas de dedicación. De los 240 créditos, 230 están distribuidos entre las 23 asignaturas obligatorias y 10 corresponden a una asignatura optativa. Cada módulo tiene una duración de seis meses.								
+					</p>
+				</div>
+				<img src="images/infografias/mapa_curricular.png" width="100%">				
+			</div>
+			
 
 
 			<!-- Articles -->			
@@ -444,62 +458,61 @@
 
 
 	  <!-- Right Column -->
-	  <div class="col-sm-3">
-
-	  		<div class="card">
-				<div class="card-header p-b-0 encabezado">
-					<h5 class="card-title">
-						<i class="fa fa-sign-in" aria-hidden="true"></i> 
-						Acceso
-					</h5>
-				</div>
-				<div class="card-block">
-					<form>
-						<div class="form-group">
-							<input type="text" class="form-control" id="uid" name="uid" placeholder="usuario">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" id="pwd" name="pwd" placeholder="contraseña">
-						</div>
-						<button type="submit" class="btn btn-primary">Acceder</button>
-					</form>
-				</div>
-			</div>	
+	  <div class="col-sm-3">	
 
 	  		<!-- Text Panel -->
 			<div class="card">
 				<div class="card-header p-b-0 encabezado">
-					<h5 class="card-title"><i class="fa fa-book" aria-hidden="true"></i> Plan de estudios</h5>
+						<h5 class="card-title"><i class="fa fa-random" aria-hidden="true"></i> Presentación </h5>						
+				</div>
+				<center>
+				<div class="card-block">
+					<iframe width="100%" height="250" src="https://www.youtube.com/embed/ZGyMNhS50Ho" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>	
+				</center>	
+			</div> 
+			<!-- Text Panel -->
+			<div class="card">
+				<div class="card-header p-b-0 encabezado">
+					<h5 class="card-title"><i class="fa fa-pencil" aria-hidden="true"></i> Modelo educativo</h5>
 				</div>
 
 				<div class="card-block">
-					<p class="card-text justificado">En el marco del paradigma educativo centrado en el aprendizaje, en particular de los modelos constructivistas, los programas de estudio y los materiales en línea del Bachillerato a Distancia UNILA están diseñados para la adquisición de conocimientos y desarrollo paralelo de habilidades, a partir de la participación activa del estudiante.</p>
-					<p><button class="btn btn-secondary" data-toggle="modal" data-target="#plan">Leer más...</button></p>
+					<p class="card-text justificado">Este programa se caracteriza por su innovador modelo educativo, un plan de estudios diseñado para la modalidad en línea con asignaturas multidisciplinarias y una forma de trabajo adaptable a distintas necesidades y horarios. El modelo ofrece el apoyo de asesores y tutores a distancia, altamente calificados, quienes acompañan al alumno durante su proceso de aprendizaje.</p>
+					<p><button class="btn btn-secondary" data-toggle="modal" data-target="#modelo">Leer más...</button></p>		
 				</div>
-			</div>		
- 
+			</div> 			  		
 			<!-- Progress Bars -->
 			<div class="card">
-				<div class="card-header p-b-0">
+				<div class="card-header p-b-0 encabezado">
 					<h5 class="card-title">
 						<i class="fa fa-tachometer" aria-hidden="true"></i> 
-						Dramatically Engage
+						Áreas de conocimiento
 					</h5>
 				</div>
 				<div class="card-block">
-                    <div class="text-xs-center" id="progress-caption-1">Proactively Envisioned &hellip; 100%</div>
+                    <div class="text-xs-center" id="progress-caption-1">Ciencias Naturales</div>
                     <progress class="progress progress-success" value="100" max="100" aria-describedby="progress-caption-1"></progress>
-                    <div class="text-xs-center" id="progress-caption-2">Objectively Innovated &hellip; 80%</div>
-                    <progress class="progress progress-info" value="80" max="100" aria-describedby="progress-caption-2"></progress>
-                    <div class="text-xs-center" id="progress-caption-3">Portalled &hellip; 45%</div>
-                    <progress class="progress progress-warning" value="45" max="100" aria-describedby="progress-caption-3"></progress>
-                    <div class="text-xs-center" id="progress-caption-4">Done &hellip; 35%</div>
-                    <progress class="progress progress-danger" value="35" max="100" aria-describedby="progress-caption-4"></progress>
+                    <div class="text-xs-center" id="progress-caption-2">Humanidades</div>
+                    <progress class="progress progress-info" value="100" max="100" aria-describedby="progress-caption-2"></progress>
+                    <div class="text-xs-center" id="progress-caption-3">Matemáticas</div>
+                    <progress class="progress progress-warning" value="100" max="100" aria-describedby="progress-caption-3"></progress>
+                    <div class="text-xs-center" id="progress-caption-4">Ciencias Sociales</div>
+                    <progress class="progress progress-danger" value="100" max="100" aria-describedby="progress-caption-4"></progress>
 				</div>
 			</div>
 
-			
+			<!-- Text Panel -->
+			<div class="card">
+				<div class="card-header p-b-0 encabezado">
+					<h5 class="card-title"><i class="fa fa-book" aria-hidden="true"></i> Habilidades</h5>
+				</div>
 
+				<div class="card-block">
+					<p class="card-text justificado">Un eje transversal de habilidades, actitudes y valores, considerado indispensable para la formación de un bachiller, atraviesa todas las asignaturas. Así, se promueve activamente el desarrollo de las habilidades de pensamiento o cognitivas, metacognitivas, comunicativas, metodológicas, matemáticas e informáticas. La integración de este eje a los contenidos de cada una de las asignaturas se explica en los programas correspondientes, con criterios de gradación para cada módulo.</p>
+					<p><button class="btn btn-secondary" data-toggle="modal" data-target="#habilidades">Leer más...</button></p>
+				</div>
+			</div>	
 	  </div><!--/Right Column -->
 
 	</div><!--/container-fluid-->
@@ -704,8 +717,50 @@
 							El diseño curricular permite incluir ejes integradores que fomenten, de manera transversal, el desarrollo de habilidades. Así, cada asignatura no sólo aborda contenidos declarativos, sino habilidades múltiples que se van desarrollando en cada módulo sucesivo. Con ello, el estudiante puede adquirir conocimientos, a la vez que desarrolla actitudes y valores, habilidades de estudio, capacidad de reflexión y autonomía en el aprendizaje, así como habilidad para participar de diversas formas, en actividades grupales.  
 							<br><br>
 							El plan de estudios B@UNAM consta de 240 créditos organizados en cuatro módulos, cada uno con seis asignaturas de 80 horas de trabajo académico cada una. Adicionalmente, los cursos propedéuticos requieren 100 horas de dedicación. De los 240 créditos, 230 están distribuidos entre las 23 asignaturas obligatorias y 10 corresponden a una asignatura optativa. Cada módulo tiene una duración de seis meses.
-						</p>
-						<div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><img src="https://genially.blob.core.windows.net/genially/version3.0/loader.gif" class="loader-genially" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; z-index: 1;width: 120px; height: 120px;"/><div id="5b6d8cc2088c650ee53bf948" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>
+						</p>	
+						<img src="images/infografias/mapa_curricular.png" width="auto">					
+    	  			</div>
+      				<div class="modal-footer">
+	        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>	        			
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
+		<div class="modal fade " id="preguntas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    			<div class="modal-content ">
+      				<div class="modal-header encabezado">
+        				<h4 class="modal-title texto-dorado-fuerte texto-negritas" id="exampleModalLongTitle">Preguntas frecuentes</h4>
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+      				<div class="modal-body">
+      					<iframe src="https://h5p.org/h5p/embed/296445" width="1090" height="789" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>						
+    	  			</div>
+      				<div class="modal-footer">
+	        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>	        			
+      				</div>
+    			</div>
+  			</div>
+		</div>
+
+
+		<div class="modal fade " id="habilidades" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    			<div class="modal-content ">
+      				<div class="modal-header encabezado">
+        				<h4 class="modal-title texto-dorado-fuerte texto-negritas" id="exampleModalLongTitle">Habilidades</h4>
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+      				<div class="modal-body">
+      					<p class="card-text justificado">Un eje transversal de habilidades, actitudes y valores, considerado indispensable para la formación de un bachiller, atraviesa todas las asignaturas. Así, se promueve activamente el desarrollo de las habilidades de pensamiento o cognitivas, metacognitivas, comunicativas, metodológicas, matemáticas e informáticas. La integración de este eje a los contenidos de cada una de las asignaturas se explica en los programas correspondientes, con criterios de gradación para cada módulo.</p>
+      					<center>
+      						<img src="images/infografias/habilidades.png" width="auto">
+      					</center>
     	  			</div>
       				<div class="modal-footer">
 	        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>	        			
